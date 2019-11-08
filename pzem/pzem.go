@@ -2,8 +2,9 @@ package pzem
 
 import (
 	"fmt"
-	"pzemlib/crc16"
 	"time"
+
+	"github.com/be-ys/pzem-004t-v3/crc16"
 
 	"github.com/go-errors/errors"
 	"github.com/tarm/serial"

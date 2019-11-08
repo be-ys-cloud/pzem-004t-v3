@@ -1,4 +1,4 @@
-module pzemlib
+module github.com/be-ys/pzem-004t-v3
 
 go 1.12
 

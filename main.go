@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	"os"
-	"pzemlib/pzem"
 	"time"
+
+	"github.com/be-ys/pzem-004t-v3/pzem"
 )
 
 const toPrint = `

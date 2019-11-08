@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"siglambpi/pzem/pzem"
+	"pzemlib/pzem"
 	"time"
 )
 

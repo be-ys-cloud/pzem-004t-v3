@@ -2,7 +2,7 @@ package pzem
 
 import (
 	"fmt"
-	"siglambpi/pzem/crc16"
+	"pzemlib/crc16"
 	"time"
 
 	"github.com/go-errors/errors"

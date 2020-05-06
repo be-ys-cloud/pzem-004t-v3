@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/be-ys/pzem-004t-v3/crc16"
+	"github.com/dark705/pzem-004t-v3/crc16"
 
 	"github.com/go-errors/errors"
 	"github.com/tarm/serial"
@@ -72,6 +72,7 @@ type Config struct {
 	Port          string
 	Speed         int
 	SlaveArddress uint8
+	TimeOut       time.Duration
 }
 
 type pzem struct {
@@ -108,7 +109,7 @@ func Setup(config Config) (Probe, error) {
 		config.SlaveArddress = PzemDefaultAddress
 	}
 
-	c := &serial.Config{Name: config.Port, Baud: config.Speed}
+	c := &serial.Config{Name: config.Port, Baud: config.Speed, ReadTimeout: config.TimeOut}
 	s, err := serial.OpenPort(c)
 	if err != nil {
 		return nil, err

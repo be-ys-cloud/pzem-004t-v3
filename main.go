@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/be-ys/pzem-004t-v3/pzem"
+	"github.com/dark705/pzem-004t-v3/pzem"
 )
 
 const toPrint = `
@@ -22,6 +22,7 @@ func main() {
 		pzem.Config{
 			Port:  os.Args[1],
 			Speed: 9600,
+			TimeOut: time.Second * 5,
 		})
 	if err != nil {
 		panic(err)

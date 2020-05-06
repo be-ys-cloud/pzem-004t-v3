@@ -1,4 +1,4 @@
-module github.com/be-ys/pzem-004t-v3
+module github.com/dark705/pzem-004t-v3
 
 go 1.12
 
